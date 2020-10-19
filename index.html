@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Silver Seniors</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--You need this link for the hamburger menu-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- Logo -->
+        <h1><img id="logo" src="logo2.png" alt="Silver Seniors" title="Silver Seniors"></h1>
+
+        <!-- Navigation with hamburger menu when mobile -->
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="services.html">Services</a>
+
+            <!-- Dont change the link below -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div> <!--topnav-->
+
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+  <div class="button-text">
+      <h2>Become a Silver Senior Today!</h2>
+      <button>Sign Up!</button>
+  </div>
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="pic1.jpg" style="width:100%">
+  </div>
+  <!-- image came from https://thedoctorweighsin.com/wp-content/uploads/2017/08/IMG-How-to-Spot-a-Senior-Friendly-Gym.jpeg -->
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="pic2.jpg" style="width:100%">
+  </div>
+  <!-- image came from https://www.silversneakers.com/wp-content/uploads/2018/12/SSBlog_WhatIsSilverSneakers_700x525.jpg -->
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="pic3.jpg" style="width:100%">
+  </div>
+  <!--image came from https://beingfitfitnesscenters.com/ -->
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="pic4.jpg" style="width:100%">
+  </div>
+  <!-- image came from https://eldergym.com/wp-content/uploads/2019/08/exercises-for-the-elderly-featured.jpg -->
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+        <div id="wrapper">
+            <div class="row">
+                <div class="col">
+                    <h2>COVID-19 Protocol</h2>
+                    <p>At Silver Seniors, we offer a spectrum of wellness and community services.</p>
+                    <p>However, with the recent developments of the Covid-19 pandemic, we are not operating at our full capacity. We have adapted to specific guidelines put in place by the Governor. We cater to a high risk community so we take these precautions very seriously.</p>
+                </div><!--column-->
+
+                <div class="col">
+                    <h2>Monthly News</h2>
+<p><b>National Breast Cancer Awareness Month</b></P>
+                    <p>We are an organization based in the need to help others. Either our members have been directly battling breast cancer or seen a loved one go through the pain. Click the button to donate today.</p>
+                    <div class="donate-button">
+                    <button>Donate</button>
+                    </div>
+<br>
+<br>
+
+                  <p><b>Trunk or Treat</p></b>
+                  <p>The Annual Silver Seniors Trunk or Treat festival is still planning to happen pending Covid guidelines. We ask that all candy be individually wrapped and to wear gloves when passing out candy. If you have any questions, visit the <a href="contact.html">contact</a> page.</p>
+
+                  <p><b>2020 Coat Drive</p></b>
+                    <p>The 2020 Coat Drive is a necessity while temperatures are declining. We ask you dig out those old coats you do not use anymore to help others. There is a coat dropoff bin in the lobby. At the end of each week, the coats will be collected and given to the homeless via St. Vincent de Paul.</p>
+                </div><!--column-->
+
+                <div class="col">
+                    <h2>New Facility Hours</h2>
+                    <p>Due to recent Covid guidelines, we have to limit our hours of operations.</p>
+                    <p><b>Sunday:</b> 10:00 - 7:00</p>
+                    <p><b>Monday:</b> 9:00 - 3:30</p>
+                  <p><b>Tuesday:</b> 9:00 - 3:30</p>
+                <p><b>Wednesday:</b> 10:00 - 5:00</p>
+            <p><b>Thursday:</b> 10:00 - 5:00</p>
+            <p><b>Friday:</b> 10:00 - 7:00</p>
+          <p><b>Saturday:</b> 10:00 - 7:00</p>
+                </div><!--column-->
+            </div><!--row-->
+        </div><!--/wrapper-->
+
+
+
+        <footer>
+          <!-- Logo -->
+          <h1><img id="logo3" src="logo3.png" alt="Silver Seniors" title="Silver Seniors"></h1>
+            <p>&copy; 2020 Silver Seniors | <a href="#">Back to top</a></p>
+        </footer>
+
+
+
+<!--  Don't Touch Javascript below
+      This needs to be on every HTML document  -->
+        <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+
+        var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+        </script>
+    </body>
+</html>
