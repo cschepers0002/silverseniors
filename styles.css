@@ -88,7 +88,7 @@ h1{
 
 #building {
   max-width: 100%;
-  margin: auto;
+  margin: auto auto 15px auto;
   display: block;
   border: 15px;
   border-color: white;
