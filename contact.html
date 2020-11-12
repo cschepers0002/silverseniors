@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Silver Seniors</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+        <!--You need this link for the hamburger menu-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- Logo -->
+        <h1><img id="logo" src="logo2.png" alt="Silver Seniors" title="Silver Seniors"></h1>
+
+        <!-- Navigation with hamburger menu when mobile -->
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="services.html">Services</a>
+
+            <!-- Dont change the link below -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div> <!--topnav-->
+        <style>
+    /* START MOBILE FORM STYLES */
+    .form-container{
+      margin: 20px auto;
+      width:90%;
+    }
+    form p{
+      margin-bottom:5px;
+    }
+    label{
+      display:block;
+    }
+    #newsletter input{
+      display:inline;
+      width:auto;
+    }
+    input{
+      /* FOR MOBILE WIDTH:100% */
+      width:100%;
+      padding:1.7%;
+      margin:1.5% 0;
+      font-size: 1em;
+      border-radius: 4px;
+      border:1px solid #ccc;
+      box-sizing: border-box;
+    }
+    textarea{
+      min-height:100px;
+      width: 100%;
+      padding: 2%;
+      margin: 1.5% 0;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    button{
+      /* CHANGED COLORS bellow */
+      background: #45A99F;
+      border: 1px solid #45A99F;
+
+      /* Rounded corners */
+      border-radius: 4px;
+
+      /* Text color */
+      color:white;
+      margin-top: 3%;
+      margin-bottom: 3%;
+      padding:2% 4%;
+      font-size: 1em;
+    }
+    /* END MOBILE FORM STYLES */
+
+    @media only screen and (min-width: 1000px) {
+      /* START DESKTOP FORM STYLES */
+      .form-container{
+        /* CHANGE WIDTH TO YOUR PREFERENCE */
+        width:50%;
+      }
+      input{
+        width:60%;
+      }
+      button{
+        margin-top: 2%;
+        margin-bottom: 2%;
+      }
+    }
+</style>
+<div id="wrapper">
+  <div class="form-container">
+  <form action="thanks.html">
+       <h3>Contact Us</h3>
+       <p> Message us with any questions, tell us about your favorite camping spots, or let us know if you want to host an event. <br>
+       We love seeing everyone's setup as every campervan is unique, so send us a photo.</p>
+       <br>
+       <label>Your Name: <br>
+       <input type="text" id="name" name="name" required></label>
+
+       <label>Email: <br>
+       <input type="email" id="email" name="email" required></label>
+
+       <label>Message: <br>
+       <textarea id="message" required></textarea></label>
+
+       <label id="newsletter"> <input type="checkbox" class="cursor" id="news" name="news" checked> Receive our newsletters</label>
+
+       <button type="submit" class="cursor" value="Submit">Submit</button>
+
+   </form>
+</div> <!-- END OF CONTAINER DIV -->
+<!-- END OF FORM -->
+
+
+
+        </div><!--/wrapper-->
+
+
+
+        <footer>
+          <!-- Logo -->
+          <h1><img id="logo3" src="logo3.png" alt="Silver Seniors" title="Silver Seniors"></h1>
+          <p>3414 Elderwood Avenue, Louisville, KY 40201</p> <p>502.533.6512</p>
+            <p>&copy; 2020 Silver Seniors | <a href="#">Back to top</a></p>
+        </footer>
+
+
+
+<!--  Don't Touch Javascript below
+      This needs to be on every HTML document  -->
+        <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+
+        var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+        </script>
+    </body>
+</html>
