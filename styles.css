@@ -75,7 +75,6 @@ margin: auto auto 15px auto;
 }
 
 
-
 #logo {
     /* ------ Max width to keep logo image from being larger than intended ------ */
     max-width: 50%;
@@ -116,7 +115,7 @@ HERO STYLES
 /* The hero image */
 .hero {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: url("hair.jpg");
+  background-image: url("thumbup.jpg");
 
   /* Set a specific height
   50vh is 50% of the viewport height */
@@ -155,6 +154,8 @@ font-family: "Poppins", sans serif;
  font-size: 1em;
  color: white;
 }
+
+
 
 /**CONACT FORM */
 <
