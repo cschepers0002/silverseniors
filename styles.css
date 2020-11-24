@@ -109,6 +109,22 @@ margin: auto auto 15px auto;
    margin: 15px 15px 15px 15px;
 
  }
+
+ table {
+  font-family: Poppins, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+}
 /* --------
 HERO STYLES
 -------- */
@@ -155,6 +171,24 @@ font-family: "Poppins", sans serif;
  color: white;
 }
 
+.servicebutton {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 50px;
+  height: 30vh;
+  width: 30vh;
+}
+
+#free {
+  margin: 0px auto 15px auto;
+}
+
+#member {
+  margin: 0px auto 15px auto;
+}
 
 
 /**CONACT FORM */
