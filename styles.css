@@ -66,7 +66,6 @@ img{
 }
 
 figcaption{
-  block: inline;
 text-align: center;
 margin: auto auto 15px auto;
 
@@ -82,7 +81,7 @@ margin: auto auto 15px auto;
 
 #logo3 {
     /* ------ Max width to keep logo image from being larger than intended ------ */
-    max-width: 50%;
+    max-width: 70%;
     margin: auto;
     display: block;
 }
@@ -122,6 +121,13 @@ td, th {
 tr:nth-child(even) {
   background-color: white;
 }
+/* ------ td wider----------------- */
+/* th:nth-child(odd){
+    min-width:300px;
+} */
+
+
+
 /* --------
 HERO STYLES
 -------- */
@@ -143,37 +149,38 @@ HERO STYLES
 
 /* Place text in the middle of the image */
 .button-text {
-  font-size: 1.4em;
   text-align: center;
   position: absolute;
-  bottom: 40%;
+  bottom: 12%;
   left: 10%;
   color: white;
 }
-
+.button-text h2{
+    font-size:1.4em;
+    margin-bottom:5px;
+}
 .donate-button {
-  font-size: 1.4em;
   text-align: center;
   color: white;
 }
 button{
-  background: none;
   border: 2px solid white;
-  border-radius: 5px;
   padding:15px;
- font-size: 1em;
+ font-size: 1.4em;
  color: white;
+/* CHANGED COLORS bellow */
+background: #4682B4;
+/* Rounded corners */
+border-radius: 4px;
+margin-top: 3%;
+margin-bottom: 3%;
 }
-
 .servicebutton {
 
   display: block;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
-  top: 50px;
-  height: 30vh;
-  width: 30vh;
+  text-align: center;
 }
 
 #free {
@@ -184,6 +191,13 @@ button{
   margin: 0px auto 15px auto;
 }
 
+#signup {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
 
 /**CONACT FORM */
 
@@ -225,43 +239,10 @@ border: 1px solid #ccc;
 border-radius: 4px;
 box-sizing: border-box;
 }
-button{
-/* CHANGED COLORS bellow */
-background: #4682B4;
-border: 2px solid white;
 
-/* Rounded corners */
-border-radius: 4px;
-
-/* Text color */
-color:white;
-margin-top: 3%;
-margin-bottom: 3%;
-padding:2% 4%;
-font-size: 1em;
-}
 /* END MOBILE FORM STYLES */
 
-@media only screen and (min-width: 1000px) {
-    /* START DESKTOP FORM STYLES */
-    form{
-    /* CHANGE WIDTH TO YOUR PREFERENCE */
-    width:47%;
-    float:left;
-    margin:1%;
-    }
-    input{
-    width:60%;
-    }
-    button{
-    margin-top: 2%;
-    margin-bottom: 2%;
-    }
-    #map{
-        float:left;
-        width:48%;
-    }
-}
+
 
 form ul {
     list-style-type: none;
@@ -429,8 +410,11 @@ Media Queries
 -------- */
 @media only screen and (min-width:700px){
     /* ---- Laptop or tablet styles below ---- */
+    #logo3{
+        width:50%;
+    }
     .col{
-        width:45%;
+        width:50%;
         float:left;
         padding:2%;
     }
@@ -444,30 +428,39 @@ Media Queries
         clear:both;
         content:"";
     }
+    #woman{
+        width:58%;
+    }
 }
 /* ----
 END Laptop or tablet styles below
  ---- */
-
-@media only screen and (min-width:1100px){
-    /* ---- Very large Desktop styles below ---- */
-    .col{
-        width:30%;
-        float:left;
-        padding:1%;
-    }
-    .row::after{
-        display: table;
-        clear:both;
-        content:"";
-    }
-    #wrapper::after{
-        display: table;
-        clear:both;
-        content:"";
-    }
-} /* ---- END Very large Desktop styles below ---- */
-
+ @media only screen and (min-width: 1000px) {
+     /* START DESKTOP FORM STYLES */
+     #logo3{
+         width:40%;
+     }
+     form{
+     /* CHANGE WIDTH TO YOUR PREFERENCE */
+     width:47%;
+     float:left;
+     margin:1%;
+     }
+     input{
+     width:60%;
+     }
+     button{
+     margin-top: 2%;
+     margin-bottom: 2%;
+     }
+     #map{
+         float:left;
+         width:48%;
+     }
+     #woman{
+         width:500px;
+     }
+ }
 
 
 /* --------

@@ -12,14 +12,13 @@
     </head>
     <body>
         <!-- Logo -->
-        <h1><a href="index.html"><img id="logo" src="logo2.png" alt="Silver Seniors" title="Silver Seniors"></h1>
+        <h1><img id="logo" src="logo2.png" alt="Silver Seniors" title="Silver Seniors"></h1>
 
         <!-- Navigation with hamburger menu when mobile -->
         <div class="topnav" id="myTopnav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html" class="active">Contact</a>
-            <a href="services.html">Services</a>
+            <a href="index.html" class="active">Home</a>
+
+
 
             <!-- Dont change the link below -->
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -29,34 +28,48 @@
 
 <div id="wrapper">
       <form action="thanks.html">
-           <h2>Contact Us</h2>
+           <h2>Silver Senior Application</h2>
            <hr>
+           <img id="signup" src="signup.jpg" alt="Seniors Walking">
 
-           <img id="contactbanner" src="contactbanner.jpg" alt="Banner" title="Banner">
+           <!-- <img id="contactbanner" src="contactbanner.jpg" alt="Banner" title="Banner"> -->
 
-           <p> Message us with any questions or concerns about Silver Seniors, or let us know if you rather interact with a Silver Senior employee in person or over the phone. <br>
+           <p> Each member is given an ID number, along with a gym card to scan for access to different parts of campus. This ID has your ID number along with your name and picture. We ask that members keep their ID's on themselves at all times. <br>
              <br>
 
-           We love hearing from our current members along with possible new members.</p>
+           We are so excited for you to join the Silver Senior Family!</p>
            <br>
-           <label>Your Name: <br>
+           <label>Full Name: <br>
            <input type="text" id="name" name="name" required></label>
+
+           <label>Street Address: <br>
+           <input type="text" id="address" name="address" required></label>
+
+           <label>City: <br>
+           <input type="text" id="city" name="city" required></label>
+
+           <label>State: <br>
+           <input type="text" id="state" name="state" required></label>
+
+           <label>Zip Code: <br>
+           <input type="text" id="zip" name="zip" required></label>
+
+           <label>Phone Number: <br>
+           <input type="number" id="number" name="number" required></label>
 
            <label>Email: <br>
            <input type="email" id="email" name="email" required></label>
 
 
 
-           <label>Message: <br>
+           <label>Emergency Contact (Full Name, Relationship, Phone Number): <br>
            <textarea id="message" required></textarea></label>
 
-           <p>Please indicate what subject your message involves:</p>
+           <p>Gender</p>
          <ul>
-           <li><input class="checkbox" type="checkbox" name="member" id="member" value="member" class="svc">Becoming a Member</li>
-           <li><input class="checkbox" type="checkbox" name="donate" id="donate" value="donate" class="svc">Donating</li>
-           <li><input class="checkbox" type="checkbox" name="general" id="general" value="general" class="svc">General</li>
-           <li><input class="checkbox" type="checkbox" name="other" id="other" value="other" class="svc">Other</li>
-           <li><input class="checkbox" type="checkbox" class="cursor" id="news" name="news" checked> Receive our newsletters</label></li>
+           <li><input class="checkbox" type="checkbox" name="male" id="male" value="male" class="svc">Male</li>
+           <li><input class="checkbox" type="checkbox" name="female" id="female" value="female" class="svc">Female</li>
+           <li><input class="checkbox" type="checkbox" name="non" id="non" value="non" class="svc">Non-Binary</li>
          </ul>
 
            <!-- <label id="newsletter"> <input type="checkbox" class="cursor" id="news" name="news" checked> Receive our newsletters</label> -->
@@ -64,21 +77,10 @@
            <button type="submit" class="cursor" value="Submit">Submit</button>
 
        </form>
-       <div id="map">
 
-           <h2>Silver Seniors Main Campus Information</h2>
-           <hr>
-
-           <p>Phone Number:<b><a href="tel: 502-553-6512">(502) 533-6512</a></b></p>
-           <p>Fax Number: <b>(502) 533-6524</b></p>
-           <p>Email:<b> info@silverseniors.com</b></p>
-           <p>Address: <b>3414 Elderwood Avenue, Louisville, KY 40201</b></p>
-           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50132.289614680514!2d-85.790558873203!3d38.25008761549451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88690b1ab35bd511%3A0xd4d3b4282071fd32!2sLouisville%2C%20KY!5e0!3m2!1sen!2sus!4v1606255609542!5m2!1sen!2sus" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-       </div>
     <!-- END OF FORM -->
 
-    <!-- possible animation
-    <embed src="thank.mov" Pluginspage="https://support.apple.com/quicktime" width="320" height="250" CONTROLLER="true" LOOP="false" AUTOPLAY="false" name="IBM Video"></embed> -->
+
 
 
         </div><!--/wrapper-->
